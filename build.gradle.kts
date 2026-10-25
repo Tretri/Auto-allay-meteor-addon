@@ -25,16 +25,11 @@ repositories {
 dependencies {
     // Fabric
     minecraft(libs.minecraft)
-    implementation(libs.fabric.loader)
+    mappings("net.fabricmc:yarn:${libs.versions.yarn.mappings.get()}:v2")
+    modImplementation(libs.fabric.loader)
 
     // Meteor
-    implementation(libs.meteor.client)
-}
-
-java {
-    toolchain {
-        languageVersion.set(JavaLanguageVersion.of(libs.versions.jdk.get().toInt()))
-    }
+    modImplementation(libs.meteor.client)
 }
 
 fun toMinecraftCompat(version: String): String {

@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "id": "addon-template",
+  "id": "allay-addon",
   "version": "${version}",
-  "name": "Addon Template",
-  "description": "An addon template for Meteor Client addons.",
+  "name": "Allay Addon",
+  "description": "An addon for allay dupe automatization by Tretri. For fabric 1.21.11",
   "authors": [
-    "seasnail"
+    "Tretri"
   ],
   "contact": {
     "sources": "https://github.com/MeteorDevelopment/meteor-addon-template"
@@ -14,14 +14,12 @@
   "environment": "client",
   "entrypoints": {
     "meteor": [
-      "com.example.addon.AddonTemplate"
+      "com.example.allayaddon.AllayAddon"
     ]
   },
-  "mixins": [
-    "addon-template.mixins.json"
-  ],
+
   "custom": {
-    "meteor-client:color": "225,25,25",
+    "meteor-client:color": "55,235,255",
     "modmenu": {
       "parent": {
         "id": "meteor-client"

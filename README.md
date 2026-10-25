@@ -110,7 +110,7 @@ Here is a brief explanation of the ones you might need to modify:
   - `libs.versions.toml`: Defines version numbers for Minecraft, Loom, Meteor, and other dependencies.
   - `wrapper`: Contains the Gradle wrapper executable files.  
     To update the Gradle wrapper executable itself, run the wrapper update command (examples are shown above).
-- `src/main/java/com/example/addon`: Contains the main class of the addon.  
+- `src/main/java/com/example/allayaddon`: Contains the main class of the addon.  
   Here you can register your custom commands, modules, and HUDs.  
   Edit the `getPackage` method to reflect the package of your addon.
 - `src/main/resources`: Contains the resources of the addon.
